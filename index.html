@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./script.js" defer ></script>
+    <title>Weekly Planer</title>
+</head>
+<body>
+    <!-- >>>> Quote section starts and TIMER <<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <div id="container">
+        <div class="quotes">
+            <button id="btn"> Just a liitle reminder for you:</button>
+            <p id="quote"> Click above to see</p>
+        </div>
+        <div class="timer">
+            <h4>Ptoductivity Timer </h4>
+            <div class="buttonsTimer">
+                <button id="btnTimer" class="start">START</button>         
+                <button id="btnTimer" class="stop">STOP</button>  
+            </div>
+            <p id="countdown"123></p>
+        </div>
+    
+    
+        </div>
+
+
+    </div>
+    <!-- >>>> Quote section ends <<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+
+
+    <!-- >>>> Todo list starts <<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <div class="toDoSection">
+        <select id="day" name="day">
+            <option value="toDo" selected>To Do</option>
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+            <option value="sunday">Sunday</option>
+        </select>
+        <input class="input" type="text" required>
+        <button class="btn" type="submit"> +</button>
+    </div>
+    <!-- >>>> Todo list ends <<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+
+    <!-- >>>> Calendar starts <<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <h1>Weekly Calendar</h1>
+    <section class="calendar">
+        <div class="daysOfTheWeek">
+        <h2>Monday</h2>
+        <ul class="monday list"></ul>
+    </div>
+    <div class="daysOfTheWeek">
+        <h2>Tuesday</h2>
+        <ul class="tuesday list"></ul>
+    </div>
+    <div class="daysOfTheWeek">
+        <h2>Wednesday</h2>
+        <ul class="wednesday list"></ul>
+    </div>
+    <div class="daysOfTheWeek">
+        <h2>Thursday</h2>
+        <ul class="thursday list"></ul>
+    </div>
+    <div class="daysOfTheWeek">
+        <h2>Friday</h2>
+        <ul class="friday list"></ul>
+    </div>
+    <div class="daysOfTheWeek">
+        <h2>Saturday</h2>
+        <ul class="saturday list"></ul>
+    </div>
+    <div class="daysOfTheWeek">
+        <h2>Sunday</h2>
+        <ul class="sunday list"></ul>
+    </div>
+
+</section>
+    <!-- >>>> Calendar ends <<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+
+
+    </div>
+</body>
+</html>

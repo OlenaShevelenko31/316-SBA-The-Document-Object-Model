@@ -1,0 +1,187 @@
+body{
+    background-image: url("https://images.pexels.com/photos/312839/pexels-photo-312839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;  
+    height: 200px; 
+    width: 100%;
+    align-items: center;
+
+}
+#btn{
+    background-color: azure;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 15px;
+    border: 5px solid rgb(61, 156, 199);
+    display: block;
+    text-align: center;
+    align-self: center;
+    color: black;
+}
+#btn:hover{
+    cursor: pointer;
+}
+.quotes{
+    display: flex;
+    flex-direction: column;    
+    align-self: center;
+    justify-content: center;
+    height: 200px;
+}
+#quote{
+    align-self: center;
+    justify-content: center;
+    font-size:15px;
+    padding: 10px;
+    width: 90%;
+    background-color: #fff;
+    border: 5px solid black ;
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+/* TIMER ============================== */
+.timer{
+    display: flex;
+    flex-direction: column;    
+    align-self: center;
+    justify-content: center;
+    height: 200px;
+}
+h4{
+    color: #fff;
+    font-size: 30px;
+    margin: 10px;
+}
+.buttonsTimer{
+    display: flex;
+    margin: 0;
+    justify-content: space-evenly;
+
+}
+#btnTimer{
+    margin-top: 5px;
+    background-color: azure;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 15px;
+    border: 5px solid rgb(61, 156, 199);
+    display: block;
+    text-align: center;
+    color: black;
+}
+#btnTimer:hover{
+    cursor: pointer
+}
+#countdown{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    background: linear-gradient(to right, #ffffff, #26bdd1);
+    border-radius: 20px;
+    padding: 10px;
+    display: none;
+} 
+.buttons{
+    display:flex;
+    align-self: center;
+}
+/* toDo section  ============================== */
+.toDoSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#day, .input{
+    width: 250px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: 20px;    
+}
+.btn{
+    width: 100px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: 20px;    
+    background-color: rgb(100, 188, 100);
+}
+
+
+/* Calendar section ============================== */
+h2, h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    position: relative;
+    background-color: #94d6dd;
+
+    
+    }
+.calendar{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.daysOfTheWeek{
+    color: black;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 14%;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: #94d6dd;
+    border-radius: 20px;
+    justify-content: center;
+
+}
+
+.calendar > .daysOfTheWeek > h2{
+    position:absolute;
+}
+.list{
+    padding-top: 50px;
+}
+
+/*  li(items to do) under the daay ==============================*/
+.styleList{
+    /* background: #ffffff; */
+    text-align: start;
+    color: #000;
+    font-size: 20px;
+    border-bottom: 1px solid #3f3fc4;
+    /* width: 100%;  */
+    word-wrap: break-word; 
+    margin: 2px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: start;  
+    flex-wrap: wrap;
+    width: 90%; 
+
+}
+
+.toDoCompated{
+    background: yellow ;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: line-through;
+    transition: all 2s ease;
+    width: 90%; 
+
+}
+
+
