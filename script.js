@@ -78,8 +78,11 @@ function stopTimer() {
 
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>> To do list input element <<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
 const input = document.querySelector ('.input');
 const btn = document.querySelector ('.btn');
+const clearLiBtn = document.querySelector('.clearLiBtn')
 const list = document.querySelector ('.list');
 
 const selectedDay = document.getElementById("day");
@@ -94,9 +97,15 @@ const sundayList = document.querySelector(".sunday.list");
 
 btn.addEventListener ('click', function(){
     const item = document.createElement ('li');
-    const clone = template.content.cloneNode(true);
+
+
 
     item.innerText = input.value;
+    if (input.value.length < 4) {
+        alert("Too short ...");
+        return false;
+    }
+
     if (input.value.length === 0) {
         return false;
     }
@@ -124,9 +133,9 @@ btn.addEventListener ('click', function(){
             sundayList.appendChild(item);
             break;
         default:
-            list.appendChild(item);s
             break;
     }
+    
 
     item.addEventListener ('click', function(){
         item.classList.add ('toDoCompated');
@@ -136,10 +145,50 @@ btn.addEventListener ('click', function(){
         const parentList = item.parentElement; 
         parentList.removeChild(item);      
 
-        window.alert('To-Do item succescfully finished! Yay ');
-
-    })
+        // window.alert('To-Do item succescfully finished! Yay ');
+        Swal.fire({
+            title: 'You did it! Yay :)',
+            imageUrl: 'https://images.unsplash.com/photo-1501743411739-de52ea0ce6a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+            imageWidth: 600,
+            imageHeight: 400,
+            imageAlt: 'Victory!',
+          })
+    }) 
 })
 
-console.log('Test')
+function clearAllItems(event){
+    let day = event.value;
+    let ul
 
+    console.log(day);
+    switch(day){    
+        case 'monday':
+            ul = mondayList
+            break;
+        case 'tuesday':
+            ul =  tuesdayList
+            break;
+        case 'wednesday':
+            ul =  wednesdayList
+            break;
+        case 'thursday':
+            ul =  thursdayList
+            break;
+        case 'friday':
+            ul =  fridayList
+            break;
+        case 'saturday':
+            ul =  saturdayList
+            break;
+        case 'sunday':
+            ul =  sundayList
+            break;
+        default:
+            break;
+    }
+    if(ul){
+        while(ul.firstChild){
+            ul.removeChild(ul.firstChild);
+        }
+    }
+}

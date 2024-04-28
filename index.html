@@ -13,11 +13,11 @@
     <!-- >>>> Quote section starts and TIMER <<<<<<<<<<<<<<<<<<<<<<<<<< -->
     <div id="container">
         <div class="quotes">
-            <button id="btn"> Just a liitle reminder for you:</button>
-            <p id="quote"> Click above to see</p>
+            <button id="btn"> Inspirational quote::</button>
+            <p id="quote">Inspirational quote</p>
         </div>
         <div class="timer">
-            <h4>Ptoductivity Timer </h4>
+            <h4>Productivity Timer </h4>
             <div class="buttonsTimer">
                 <button id="btnTimer" class="start">START</button>         
                 <button id="btnTimer" class="stop">STOP</button>  
@@ -46,7 +46,7 @@
             <option value="saturday">Saturday</option>
             <option value="sunday">Sunday</option>
         </select>
-        <input class="input" type="text" required>
+        <input class="input" type="text" minlength=4 required >
         <button class="btn" type="submit"> +</button>
     </div>
     <!-- >>>> Todo list ends <<<<<<<<<<<<<<<<<<<<<<<<<< -->
@@ -55,33 +55,40 @@
     <!-- >>>> Calendar starts <<<<<<<<<<<<<<<<<<<<<<<<<< -->
     <h1>Weekly Calendar</h1>
     <section class="calendar">
-        <div class="daysOfTheWeek">
+    <div class="daysOfTheWeek">
         <h2>Monday</h2>
         <ul class="monday list"></ul>
+        <button class="clearLiBtn" type="submit" value="monday" onclick="clearAllItems(this)">Clear</button>
     </div>
     <div class="daysOfTheWeek">
         <h2>Tuesday</h2>
-        <ul class="tuesday list"></ul>
+        <ul class="tuesday list"></ul>  
+        <button class="clearLiBtn" type="submit" value="tuesday" onclick="clearAllItems(this)">Clear</button>
     </div>
     <div class="daysOfTheWeek">
         <h2>Wednesday</h2>
         <ul class="wednesday list"></ul>
+        <button class="clearLiBtn" type="submit" value="wednesday" onclick="clearAllItems(this)">Clear</button>
     </div>
     <div class="daysOfTheWeek">
         <h2>Thursday</h2>
         <ul class="thursday list"></ul>
+        <button class="clearLiBtn" type="submit" value="thursday" onclick="clearAllItems(this)">Clear</button>
     </div>
     <div class="daysOfTheWeek">
         <h2>Friday</h2>
         <ul class="friday list"></ul>
+        <button class="clearLiBtn" type="submit" value="friday" onclick="clearAllItems(this)">Clear</button>
     </div>
     <div class="daysOfTheWeek">
         <h2>Saturday</h2>
         <ul class="saturday list"></ul>
+        <button class="clearLiBtn" type="submit" value="saturday" onclick="clearAllItems(this)">Clear</button>
     </div>
     <div class="daysOfTheWeek">
         <h2>Sunday</h2>
         <ul class="sunday list"></ul>
+        <button class="clearLiBtn" type="submit" value="sunday" onclick="clearAllItems(this)">Clear</button>
     </div>
 
 </section>
